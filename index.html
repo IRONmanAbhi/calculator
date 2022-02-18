@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script lang="javaScript" type="text/javaScript" src="cal2.js"></script>
+    <script src="https://kit.fontawesome.com/ac46427708.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container calculator">
+        <div class="screen"><p id="screen">0</p></div>
+        <div class="keypad">
+            <div class="flex">
+                <button onclick="clr()">AC</button>
+                <button onclick="e()"><i class="fas fa-backspace"></i></button>
+                <button onclick="enter(value)" value="%"><i class="fas fa-percentage"></i></button>
+                <button onclick="enter(value)" value="/"><i class="fas fa-divide"></i></button>
+            </div>
+            <div class="flex">
+                <button onclick="enter(value)" value="7">7</button>
+                <button onclick="enter(value)" value="8">8</button>
+                <button onclick="enter(value)" value="9">9</button>
+                <button onclick="enter(value)" value="*"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="flex">
+                <button onclick="enter(value)" value="4">4</button>
+                <button onclick="enter(value)" value="5">5</button>
+                <button onclick="enter(value)" value="6">6</button>
+                <button onclick="enter(value)" value="-"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="flex">
+                <button onclick="enter(value)" value="1">1</button>
+                <button onclick="enter(value)" value="2">2</button>
+                <button onclick="enter(value)" value="3">3</button>
+                <button onclick="enter(value)" value="+"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="flex">
+                <button><a href="scicalc.html">(scicalc)under construction</a></i></button>
+                <button onclick="enter(value)" value="0">0</button>
+                <button onclick="enter(value)" value=".">.</button>
+                <button onclick="operation()" value="="><i class="fas fa-equals"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
