@@ -12,30 +12,30 @@ function clr()
 
 function enter(x)
 {
-    if(x == '.' && decimal_a!=0)
-    {
-        if(decimal_a == 1)
-        {
-            decimal_a++;
-            expression.push(x);    
-            string_a = string_a + x;
-            document.getElementById("screen").innerHTML=string_a;
-        }
-        else if(decimal_a==2);
-    }
-    else if(x == '.' && decimal_a == 0)
-    {
-        decimal_a++;
-        expression.push(x);    
-        string_a = string_a + x;
-        document.getElementById("screen").innerHTML=string_a;
-    }
-    else
-    {
-        expression.push(x);    
-        string_a = string_a + x;
-        document.getElementById("screen").innerHTML=string_a;
-    }         
+            if(x == '.' && decimal_a!=0)
+            {
+                if(decimal_a == 1)
+                {
+                    decimal_a++;
+                    expression.push(x);    
+                    string_a = string_a + x;
+                    document.getElementById("screen").innerHTML=string_a;
+                }
+                else if(decimal_a==2);
+            }
+            else if(x == '.' && decimal_a == 0)
+            {
+                decimal_a++;
+                expression.push(x);    
+                string_a = string_a + x;
+                document.getElementById("screen").innerHTML=string_a;
+            }
+            else
+            {
+                expression.push(x);    
+                string_a = string_a + x;
+                document.getElementById("screen").innerHTML=string_a;
+            }         
 }
 
 function e()
